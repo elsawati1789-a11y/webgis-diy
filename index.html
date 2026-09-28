@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebGIS Kependudukan DIY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+    <header class="header background-1">
+        <img src="Logo Universitas Udayana.png" alt="Logo UNUD" class="logo">
+        <h1 class="header-1 background-1">WEBGIS KEPENDUDUKAN DIY </h1>
+        <p class="font-1">Aplikasi untuk menampilkan data kependudukan di Daerah Istimewa Yogyakarta</p>
+        <main class="main background-2">
+            <nav class="navbar">
+                <a href="#" class="active">Beranda</a>
+                <a href="#">Peta</a>
+                <a href="#">Data</a>
+                <a href="#">Tentang</a>
+            </nav>
+    </header>
+
+    <main class="main-content">
+        <aside class="info-panel">
+            <h2>Informasi WebGIS</h2>
+            <p id="status">
+                WebGIS ini menampilkan data kependudukan di Daerah Istimewa Yogyakarta
+            </p>
+            <label for="wilayah-select">
+                Pilih Kabupaten/Kota
+            </label>
+            <select id="wilayah-select">
+                <option value=""> Pilih wilayah </option>
+            </select>
+            <button id="btn-peta">Tampilkan Peta</button>
+            <a href="https://www.bps.go.id">Sumber Data Kependudukan DIY</a>
+        </aside>
+        <section class="map-container">
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <footer class="footer background-3">
+        <p>&copy; 2024 WebGIS Kependudukan DIY. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="javascript/app.js"></script>
+</body>
+
+</html>
