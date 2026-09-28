@@ -126,7 +126,7 @@ img.logo {
 
 .popup-header span {
   font-size: 11px;
-  color: #f3eb0b;
+  color: #e7e7dd;
   text-transform: uppercase;
   letter-spacing: 0.8px;
 }
@@ -188,4 +188,59 @@ img.logo {
   outline: none;
   border-color: #000000;
   box-shadow: 0 0 0 2px rgba(235, 229, 37, 0.2);
+}
+
+/* ================
+Legend
+================== */
+.map-legend {
+  position: absolute;
+  left: 28px;
+  bottom: 28px;
+  z-index: 1000;
+  min-width: 220px;
+  padding: 16px;
+  background-color: #f9ffa1 
+  border 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.276);
+}
+
+.map-legend h3 {
+margin: 0 0 12px 0;
+font-size: 19px;
+font-weight: 600;
+color: #030c15;
+}
+
+.legend-item {
+display: flex;
+align-items: center;
+gap: 8px;
+margin-bottom: 8px;
+font-size: 15px;
+color: #021124;
+}
+
+.legend-item:last-child {
+margin-bottom: 0;
+}
+
+.legend-color {
+width: 16px;
+height: 16px;
+display: inline-block;
+border: 1px solid #04162f;
+border-radius: 3px;
+}
+
+.legend-color.low {
+background-color: #a8d08d;
+}
+
+.legend-color.medium {
+background-color: #ffd966;}
+
+.legend-color.high {
+background-color: #e06666;
 }
